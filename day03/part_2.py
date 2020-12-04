@@ -23,10 +23,10 @@ def count_trees_on_slope(slope_x, slope_y, map_grid):
 
 
 def get_x_position(current_x, increment, map_width):
-    thing = current_x + increment
-    if thing >= map_width - 1:
-        thing -= map_width
-    return thing
+    position = current_x + increment
+    if position >= map_width:
+        position -= map_width
+    return position
 
 
 if __name__ == "__main__":
